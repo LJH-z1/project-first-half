@@ -13,9 +13,9 @@
           v-model="itemsPerPage" 
           class="border border-gray-300 rounded-md px-3 py-2 text-sm"
         >
-          <option value="5">5 items</option>
-          <option value="10">10 items</option>
-          <option value="20">20 items</option>
+          <option value="6">6 items</option>
+          <option value="12">12 items</option>
+          <option value="15">15 items</option>
         </select>
       </div>
     </div>
@@ -62,7 +62,7 @@ const props = defineProps<{
   filter?: string
 }>()
 
-const itemsPerPage = ref(5)
+const itemsPerPage = ref(6)
 const currentPage = ref(props.page || 1)
 const currentFilter = ref(props.filter || 'all')
 
